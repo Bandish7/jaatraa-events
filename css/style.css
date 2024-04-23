@@ -104,6 +104,23 @@ span{
     object-fit: cover;
     object-position: bottom;
 }
+.image-slider{
+    background-color: var(--button-hover);
+    padding: 20px ;
+}
+.image-slider .images{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    
+}
+.image-slider .images::-webkit-scrollbar{
+    display: none;
+}
+.images img{
+    max-width: 500px;
+    max-height: 500;
+}
 /* ------------------Footer--------------- */
 footer{
     background-color: var(--shade-color);
