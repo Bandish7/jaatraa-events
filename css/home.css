@@ -1,0 +1,231 @@
+@import url(./reset.css);
+@font-face {
+    font-family: handwrite;
+    src: url(../assets/Peanut\ Butter.otf);
+}
+:root{
+    --primary-color:rgb(10, 33, 49);
+    --secondary-color:#C11E31;
+    --button-hover:#e4283e;
+    --shade-color:#152C40;
+    --white: #fff;
+}
+body{
+    max-width: 600px;
+    width: 100%;
+    color: white;
+    background-color: var(--primary-color);
+}
+header{
+    background-color: var(--primary-color);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 10px 20px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+button{
+    color: var(--white);
+    background-color: var(--secondary-color);
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 1.1px;
+}
+.mobilenavbtn a{
+font-size: 3rem;
+}
+/* Hero Section */
+.hero{
+    position: relative;
+    height: 50vh;
+}
+.heroimage{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+   
+}
+.heroimage img{
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+}
+.herotext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+}
+h1{
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+
+}
+span{
+
+    background-color: var(--secondary-color);
+    padding: 5px;
+}
+h2{
+    text-align: center;
+    color: var(--secondary-color);
+   font-size: 70px;
+   font-family: handwrite;
+   -webkit-text-stroke: 1px var(--white);
+   margin: 0;
+   padding: 0;
+   line-height: 1;
+
+   
+}
+.slogan{
+    text-align: center;
+    color: var(--white);
+    font-weight: lighter;
+    font-style: italic ;
+   font-size: 30px;
+   font-family: handwrite; 
+   margin: 0;
+   padding: 0;
+   line-height: 0;
+  
+}
+/* Upcoming Events */
+.upcoming{
+    padding: 2rem 0;
+}
+h3{
+    font-size: 30px;
+    font-weight: 550;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.upcomingbox{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+.eventrow{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    overflow-y: hidden;
+    height: 90vh;
+}
+.eventcontainer{
+    flex-basis: 100%;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.bookmark{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-image: url(../assets/bookmark.png);
+    width: 50px;
+    height: 60px  ;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1;
+    padding: 15px 0;
+}
+h4{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+}
+.subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5px;
+
+}
+.subtitle p{
+    flex-basis: 50%;
+    font-family: Outfit;
+    font-weight: 400;
+    color: rgb(215, 215, 215);
+}
+.swipe{
+    position:absolute ;
+    top: 30%;
+    z-index: 10;
+    background-color: #c11e31c5;
+    padding: 1vh 0.5vw;
+    /* border-radius: 50%; */
+    
+    font-size: 20px;
+
+}
+.next{
+    background-color: var(--shade-color);
+    padding: 2rem 0;
+}
+.control_next{
+    position:absolute ;
+    top: 30%;
+    z-index: 10;
+    right: 0;
+
+}
+@media screen and (max-width:400px) {
+    button{
+        padding: 10px 15px;
+    }
+    .herotext{
+        top: 30%;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 1.0 ;
+    }
+    h2{
+        font-size: 50px;
+        line-height: 1.5;
+    }
+    h3{
+        font-size: 20px;
+    }
+    
+}
